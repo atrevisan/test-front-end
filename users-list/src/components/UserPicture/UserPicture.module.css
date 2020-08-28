@@ -1,0 +1,18 @@
+.UserPictureContainer{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+  
+}
+
+.UserPictureContainer > img{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.UserPictureContainer > svg:hover{
+    cursor: pointer;
+    fill: rgba(75, 72, 72, 0.329);
+}
