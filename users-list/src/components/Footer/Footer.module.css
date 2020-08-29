@@ -3,6 +3,12 @@
     background: black;
    display: flex;
     justify-content: flex-end;
-   align-items: flex-end;
-   color: #eeeeee94;
+   align-items: center;
+   color: #eeeeee73;
+  flex: none;
+   width: 100%;
+}
+
+.Footer > span{
+    margin-right: 30px;
 }

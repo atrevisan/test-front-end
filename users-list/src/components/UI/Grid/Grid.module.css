@@ -1,0 +1,43 @@
+.ContentContainer{
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 40px;
+}
+
+.FilterControls{
+    border: 1px solid #a5a2a2;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    padding: 10px 0;
+    align-items: center;
+}
+
+.FilterControls > div{
+    display: flex;
+    flex-direction: column;
+}
+
+.FilterControls > div input{
+    margin: 10px 10px;
+    height: 20px;
+    min-width: 50px;
+}
+
+.FilterControls button {
+    background-color: #f4511e;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.FilterControls button:hover {opacity: 1}

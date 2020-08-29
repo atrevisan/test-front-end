@@ -1,5 +1,5 @@
 .ContentContainer{
-    flex: auto;
-    padding: 0 30px;
+    padding: 0 60px;
     margin-top: 20px;
+    flex: 1 0 auto;
 }

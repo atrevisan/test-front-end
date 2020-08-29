@@ -3,13 +3,14 @@ import classes from "./Toolbar.module.css";
 import NavigationItems from "../NavigationItems/NavigationItems";
 import NavigationItem from "../NavigationItems/NavigationItem/NavigationItem";
 import UserPicture from "../../../components/UserPicture/UserPicture";
+import Logo from "../../Logo/Logo";
 
 const Toolbar = (props) => {
   return (
-    <header>
+    <header className={classes.Header}>
       <div className={classes.TopSection}>
         <div className={classes.LogoContainer}>
-            Logo
+          <Logo />
         </div>
         <div className={classes.UserContainer}>
           <UserPicture />
@@ -17,9 +18,7 @@ const Toolbar = (props) => {
       </div>
 
       <NavigationItems>
-        <NavigationItem exact to="/">
-          Home
-        </NavigationItem>
+        <NavigationItem exact to="/">Home</NavigationItem>
         <NavigationItem to="/about">About</NavigationItem>
       </NavigationItems>
     </header>
