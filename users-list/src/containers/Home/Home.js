@@ -65,8 +65,8 @@ const Home = (props) => {
 
   const handlePageChange = (pageNumber) => {
     const updatedFilteredUsers = users.slice(
-      (activePage - 1) * 10,
-      activePage * 10
+      (pageNumber - 1) * 10,
+      pageNumber * 10
     );
 
     setActivePage(pageNumber);
