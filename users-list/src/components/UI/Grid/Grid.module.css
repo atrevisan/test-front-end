@@ -9,7 +9,7 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
-    padding: 10px 0;
+    padding: 10px 10px;
     align-items: center;
 }
 
@@ -41,3 +41,37 @@
 }
 
 .FilterControls button:hover {opacity: 1}
+
+.PaginationContainer{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.PaginationContainer > ul{
+    display: flex;
+    list-style: none;
+}
+
+.PaginationContainer > ul li{
+    margin: 0 5px;
+    background-color: #f4511e;
+    opacity: 0.6;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.PaginationContainer > ul li:hover{
+    opacity: 1 !important;
+}
+
+:global(.active) {
+    opacity: 1 !important;
+  }
+
+.PaginationContainer > ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+  
+}

@@ -1,4 +1,5 @@
 import React from "react";
+import Pagination from "react-js-pagination";
 import classes from "./Grid.module.css";
 
 const Grid = (props) => {
@@ -7,7 +8,12 @@ const Grid = (props) => {
     filterData,
     onFilterChange,
     onFilterApplied,
-    children,
+    activePage,
+    handlePageChange,
+    itemsCountPerPage,
+    totalItemsCount,
+    pageRangeDisplayed,
+    children
   } = props;
   const filterControls = filterData.map((f) => {
     return (
@@ -30,6 +36,15 @@ const Grid = (props) => {
         <button onClick={onFilterApplied}>Filter</button>
       </div>
       <div className={classes.ContentContainer}>{children}</div>
+      <div className={classes.PaginationContainer}>
+        <Pagination
+          activePage={activePage}
+          itemsCountPerPage={itemsCountPerPage}
+          totalItemsCount={totalItemsCount}
+          pageRangeDisplayed={pageRangeDisplayed}
+          onChange={handlePageChange}
+        />
+      </div>
     </>
   );
 };
